@@ -7,10 +7,10 @@
 body {
     font-family: Arial, sans-serif;
     background-image: url('img/background2.jpg');
-    background-size: cover; /* Escala la imagen para cubrir todo el fondo */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center center; /* Centra la imagen en el fondo */
-    background-attachment: fixed; /* Hace que la imagen de fondo permanezca fija al hacer scroll */
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-attachment: fixed; 
     margin: 0;
     
 }
