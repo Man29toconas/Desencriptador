@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('img/background2.jpg');
+    background-size: cover; /* Escala la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center; /* Centra la imagen en el fondo */
+    background-attachment: fixed; /* Hace que la imagen de fondo permanezca fija al hacer scroll */
+    margin: 0;
+    
+}
+header {
+    background-color: transparent;
+    text-align: center;
+    margin: 0;
+}
+
+.logo {
+    max-width: 150px;
+    font-size: 5em;
+    font-family: "Jersey 10", sans-serif;
+    color: white;
+    margin: 0;
+    padding: 25px 30px;
+}
+header .container-logo{
+    background-color: transparent;
+    padding: 0px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.24);
+    padding: 10px 12px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin: 10px 10px;
+}
+
+h1 {
+    font-size: 3.5em;
+    font-family: "Jersey 10", sans-serif;
+    text-align: center;
+    color: #000000;
+    margin: auto;
+}
+#encriptador h1{
+    margin-top: 0;
+}
+#desencriptador h1{
+    margin-top: 0;
+}
+#encriptador .contenido{
+    background-position: center center;
+    background-size: cover;
+    padding: 40px 0px;
+    margin: 20px;
+    border-radius: 15px;
+}
+#desencriptador .contenido2{
+    background-position: center center;
+    background-size: cover;
+    padding: 40px 0px;
+    margin: 10px;
+    border-radius: 15px;
+}
+#desencriptador .container{
+    margin-top: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 0px;
+    margin-bottom: 0px;
+    border: 1px solid #cccccc79;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+}
+
+.warning {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    margin-bottom:5px;
+    font-family: "Jersey 10", sans-serif;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #e00000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: "Jersey 10", sans-serif;
+    font-size: 22px;
+}
+
+button:hover {
+    background-color: #b30000ea;
+}
+
+#copyBtn {
+    width: 100%;
+    background-color: #e00000;
+    margin-top: 10px;
+    font-family: "Jersey 10", sans-serif;
+}
+
+#copyBtn:hover {
+    background-color: #b30000ea;
+}
+
+@media (max-width: 500px) {
+    .button-container {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+@media (min-width:850px){
+    header{
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header .container-logo{
+        align-items:start;
+    }
+    #encriptador .proceso{
+        display: flex;
+        justify-content: center;
+    }#desencriptador .proceso2{
+        display: flex;
+        justify-content: center;
+    }
+    #nuestros-programas .carta{
+        padding: 50px;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+}
